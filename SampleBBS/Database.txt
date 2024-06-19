@@ -9,7 +9,10 @@ create database samplebbs;
 show databases;
 
 #ユーザ作成
-create user 'samplebbs'@'localhost' identified by 'bbspass';
+create user samplebbs@localhost identified by 'bbspass';
+
+#ユーザの一覧を表示
+select * from mysql.user \G
 
 #ユーザに権限を付与
 grant all on samplebbs.* to 'samplebbs'@'localhost';
