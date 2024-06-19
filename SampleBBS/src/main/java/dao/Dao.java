@@ -3,7 +3,7 @@ public class Dao extends DriverAccessor{
 	//DBとのコネクションを入れる変数
 	private Connection connection;
 	public static final String UTF_8 = "UTF-8";	public static final String MS932 = "MS932";	public Dao(){
-	}
+	}		//分からんな～
 	//ユーザidを入力すると，そのidを持つUserを返す
 	public User getUserById(String id) {		//返り値用Userを作成		User user = new User();				//コネクションを生成		this.connection = this.createConnection();				//Exceptionが発生するので，try-catch
 		try{			//SQL文の定義．?には，後で値を埋める．
