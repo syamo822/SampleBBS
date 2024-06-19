@@ -23,6 +23,7 @@ public class ArticleListServlet extends HttpServlet {
         super();
     }
 
+    //Article編集
     //POSTアクセスされた場合は，doGetに丸投げ
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request,response);
